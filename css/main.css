@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Archivo',sans-serif;
+    letter-spacing: 1px;
+    background-color: #f9f9f9;
+    font-size: 10px;
+}
+
+.container {
+    margin: 25px auto 0;
+    padding: 20px;
+    width: 30%;
+    background-color: #364f6b;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.77);
+}
+
+.container--signup {
+    display: block;
+}
+
+.container--login {
+    display: none;
+}
+
+
+/*button*/
+.btn {
+    padding: 20px 0px;
+    border-style: inherit;
+}
+
+.btn-switch {
+    display: flex;
+    justify-content: center;
+    background-color: #364f6b;
+}
+
+.btn--login, .btn--signup {
+    width: 50%;
+    background: salmon;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn--login {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn--signup {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.active {
+    background: #00b1bc;
+    z-index: 1;
+    color: #f8f3d4;
+}
+.active:hover {
+    background-color: #00bfcc;
+    transition: cubic-bezier(0.075, 0.082, 0.165, 1);
+}
+
+.inactive {
+    color: #364f6b;
+}
+
+.inactive:hover {
+    cursor: pointer;
+    background-color: #1dbac4;
+    color:#f8f3d4;
+
+}
+
+.btn-submit {
+    background-color: #fc3c76;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f8f3d4;
+}
+
+
+/*text-content*/
+
+.txt {
+    background: transparent;
+    color: #f8f3d4;
+    text-transform: capitalize;
+    font-size: 24px;
+    text-align: center;
+}
+
+.text-login {
+    text-align: center;
+}
+
+ .forget {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #364f6b;
+    text-decoration: none;
+    color:#f8f3d4 ;
+    font-size: 15px;
+}
+
+.forget:hover {
+    text-decoration: none;
+}
+
+/*form*/
+
+.input-form {
+    background-color: #364f6b;
+}
+
+.form-signup, .form-login {
+    display: inline-block;
+    width: 100%;
+    background-color: #364f6b;
+}
+
+input.signup-email, .signup-password,
+.login-email,.login-password {
+    margin: 0 auto;
+     margin-bottom: 20px;
+    width: 100%;
+    height: 35px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #f8f3d4;
+    color: #f8f3d4;
+    background-color: #364f6b;
+    font-size: 18px;
+}
+
+
+
+.form-footer {
+    display: flex;
+    background-color: #364f6b;
+    flex-direction: column;
+}

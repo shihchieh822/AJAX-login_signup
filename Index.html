@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="css/main.css">
+
+
+    
+
+</head>
+
+<body>
+    <div class="container  container--signup">
+        <!--signup-->
+        <!--title按鈕-->
+        <div class="btn-switch text-uppercase">
+            <button onclick="signUpSwitch();" class="btn  btn--signup  active">SignUp</button>
+            <button onclick="logInSwitch();" class="btn  btn--login  inactive">Login</button>
+        </div>
+        <!--switch-->
+        <p class="text-signup txt">註冊</p>
+        <div class="input-form">
+        <form action="#" class="form form-signup">
+            <input type="email" name="email" class="signup-email" placeholder="Email">
+            <input type="password" name="password" class="signup-password" placeholder="Password">
+            </div>
+            <div class="form-footer">
+                <input type="button" class="btn-submit" id="signupBtn" value="註冊">
+            </div>
+            <!--form-footer-->
+        </form>
+    </div>
+    <!--container-->
+
+    <!--login-->
+    <div class="container container--login">
+        <div class="btn-switch">
+            <button onclick="signUpSwitch();" class="btn  btn--signup  inactive">SignUp</button>
+            <button onclick="logInSwitch();" class="btn  btn--login  active">Login</button>
+        </div>
+        <!--switch-->
+        <p class="text-login txt">登入</p>
+        <form action="#" class="form form-login">
+            <div class="input-form">
+            <input type="email" name='email' class="login-email" placeholder="Email">
+            <input type="password" name="password" class="login-password" placeholder="Password">
+            </div>
+            <div class="form-footer">
+                <a href="#" class="forget">忘記密碼?</a>
+                <input type="submit" class="btn-submit" id="loginBtn" value="登入">
+            </div>
+            <!--footer-->
+        </form>
+    </div>
+    <!--container-->
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>
